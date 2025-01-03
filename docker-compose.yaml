@@ -1,0 +1,19 @@
+services:
+
+  api:
+    build: .
+    image: jairperrut/movie-awards-api:latest
+    container_name: movie-awards-api    
+    env_file:
+      - .env
+    ports:
+      - 8000:8000
+    command: make run-server
+
+  tests:
+    build: .
+    image: jairperrut/movie-awards-api:latest
+    container_name: movie-awards-tests
+    env_file:
+      - .env
+    command: make run-tests
