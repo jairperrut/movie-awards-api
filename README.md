@@ -62,7 +62,7 @@ ports:
   - "<nova_porta>:8000"
 ```
 
-Substitua `<nova_porta>` pelo número desejado e execute novamente o comando `docker-compose up`.
+Substitua `<nova_porta>` pelo número desejado e execute novamente o comando `docker-compose up --build api`.
 
 ## Endpoints Principais
 
