@@ -46,7 +46,7 @@ Para executar a aplicação utilizando Docker Compose:
 3. Execute o comando:
 
 ```bash
-docker-compose up api
+docker-compose up --build api
 ```
 
 A aplicação estará disponível em [http://localhost:8000](http://localhost:8000).
@@ -89,7 +89,7 @@ A aplicação inclui testes de integração para validar o comportamento dos cas
 Para executar os testes:
 
 ```bash
-docker-compose up tests
+docker-compose up --build tests
 ```
 
 Os testes garantem a corretude das funcionalidades, como o cálculo dos intervalos entre vitórias de produtores.

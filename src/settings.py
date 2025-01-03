@@ -2,7 +2,6 @@ from pydantic_settings import BaseSettings
 
 
 class Settings(BaseSettings):
-    port: int = 8000
     log_level: str = "INFO"
     db_echo: bool = False
 
